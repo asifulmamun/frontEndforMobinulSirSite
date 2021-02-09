@@ -1,33 +1,51 @@
 /* 
+    ----- Template Css - Global
+*/
+@import "_variable.scss";
+@import "_google_fonts.scss";
+@import "_global.scss";
+
+
+
+/*
     ---- Bootstap
 */
 // // Custom.scss
 // // Option A: Include all of Bootstrap
 // @import "../node_modules/bootstrap/scss/bootstrap";
 
-
 // Custom.scss
 // Option B: Include parts of Bootstrap
-
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 // Optional
-// @import "../node_modules/bootstrap/scss/root";
-// @import "../node_modules/bootstrap/scss/reboot";
-// @import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
 // @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 
 
-
 /* 
     ---- Font Awesome Free 5.15.2 
 */
-@import "../node_modules/fontawesome/scss/fontawesome.scss";
-@import "../node_modules/fontawesome/scss/solid.scss";
-@import "../node_modules/fontawesome/scss/brands.scss";
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
+@import "./fontawesome/regular.scss";
+
+
+/* 
+    ----- Template Css- Content
+*/
+@import "_reset.scss";
+@import "_header.scss";
+@import "_front_content.scss";
+
+
+
 

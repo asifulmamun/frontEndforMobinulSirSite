@@ -1,0 +1,68 @@
+/*
+    ------ catergory
+*/
+.cat_container{
+    border: 1px solid #ccc;
+    height: 250px;
+    padding: 5px 5px;
+    overflow: hidden;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 0 3px 7px #e0e0e0;
+
+    h2{
+        font-size: 18px;
+        text-align: center;
+        padding-top: 13px;
+
+        a{
+            font-weight: 300;
+            color: $font_color;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $primary_color;
+            text-decoration: underline !important;
+        }
+    }
+}
+
+.cat_img{
+    text-align: center;
+
+    img{
+        width: 95%;
+        height: auto;
+    }
+}
+
+.cat_see_more{
+    border-bottom: 1px solid #ddd;
+    padding: {
+        bottom: 3px;
+    }
+
+    a{
+        font-size: 12px;
+        color: $font_color;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+/* 
+    -------- Service Section
+*/
+
+#service{
+    .heading{
+        h2{
+            font-size: 22px;
+            color: $font_color;
+            text-transform: uppercase;
+        }
+    }
+}
