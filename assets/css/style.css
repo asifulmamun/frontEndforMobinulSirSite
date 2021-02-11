@@ -23,12 +23,28 @@ a:hover {
   cursor: pointer;
 }
 
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+footer .copyright span a, footer .col_container .content ul a {
+  text-decoration: none;
+}
+
+footer .col_container .content ul a:hover {
+  text-decoration: underline;
+}
+
 .simple_space_top {
   margin-top: 30px !important;
 }
 
 .section_space {
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 .row_space {
@@ -37,8 +53,8 @@ a:hover {
 }
 
 .col_space {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
 }
 
 .text-center {
@@ -8277,6 +8293,7 @@ readers do not read off random characters that represent icons */
   background-color: #fff;
   display: inline-block;
   box-shadow: 0 3px 7px #e0e0e0;
+  /* h2 */
 }
 .cat_container h2, .cat_container .h2 {
   font-size: 18px;
@@ -8290,10 +8307,11 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 .cat_container h2 a:hover, .cat_container .h2 a:hover {
-  color: #00B760;
+  color: rgba(0, 0, 0, 0.75);
   text-decoration: underline !important;
 }
 
+/* category container */
 .cat_img {
   text-align: center;
 }
@@ -8302,6 +8320,7 @@ readers do not read off random characters that represent icons */
   height: auto;
 }
 
+/* category image */
 .cat_see_more {
   border-bottom: 1px solid #ddd;
   padding-bottom: 3px;
@@ -8315,13 +8334,139 @@ readers do not read off random characters that represent icons */
   text-decoration: underline;
 }
 
+/* cat see more btton or link */
 /* 
     -------- Service Section
 */
+#service {
+  /* services content */
+}
 #service .heading h2, #service .heading .h2 {
   font-size: 22px;
   color: #383a3c;
   text-transform: uppercase;
 }
+#service #services_content {
+  /* container */
+}
+#service #services_content .services_container {
+  width: 220px;
+  height: 280px;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 7px #e0e0e0;
+  /* rating */
+  /* title */
+  /* authore */
+  /* price */
+  /* featured */
+}
+#service #services_content .services_container .services_thumb {
+  padding: 3px;
+}
+#service #services_content .services_container .services_thumb img {
+  width: 100%;
+  height: 150px;
+}
+#service #services_content .services_container .rating {
+  padding: 0px 7px;
+}
+#service #services_content .services_container .title {
+  padding: 0px 7px;
+}
+#service #services_content .services_container .title h2, #service #services_content .services_container .title .h2 {
+  font-size: 15px;
+}
+#service #services_content .services_container .title h2 a, #service #services_content .services_container .title .h2 a {
+  color: #383a3c;
+  font-weight: 300;
+  text-decoration: none;
+}
+#service #services_content .services_container .author h4, #service #services_content .services_container .author .h4 {
+  font-size: 13px;
+  color: #383a3c;
+  padding: 0 5px;
+  font-weight: 300;
+}
+#service #services_content .services_container .author h4 a, #service #services_content .services_container .author .h4 a {
+  color: #555;
+  text-decoration: none;
+}
+#service #services_content .services_container span.price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: #00B760;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+#service #services_content .services_container div.featured {
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 70px;
+  height: 20px;
+  background-image: url(../img/featured_icon.png);
+  z-index: 100;
+}
+
+/* service section */
+/* 
+    ------ Footer
+*/
+#footer {
+  background-color: #222E3D;
+  padding: 30px 0 30px 0;
+}
+
+footer {
+  /* col container */
+  /* copyright */
+}
+footer .col_container {
+  /* content */
+}
+footer .col_container h3, footer .col_container .h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer .col_container .content ul {
+  margin-left: -2rem;
+}
+footer .col_container .content ul li {
+  list-style: none;
+  font-size: 13px;
+  color: #fff;
+  line-height: 25px;
+}
+footer .col_container .content ul li a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+footer .col_container .content ul li a:hover {
+  text-decoration: underline;
+}
+footer .col_container .content ul a {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+}
+footer .copyright {
+  color: #fff;
+  font-size: 12px;
+  border-top: 0.5px solid #fff;
+  padding-top: 3px;
+}
+footer .copyright span a {
+  color: #fff;
+}
+
+/* footer */
 
 /*# sourceMappingURL=style.css.map */

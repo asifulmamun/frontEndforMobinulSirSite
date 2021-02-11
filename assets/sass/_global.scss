@@ -19,13 +19,29 @@ a:hover{
     cursor: pointer;
 }
 
+.float_left{
+    float: left;
+}
+
+.float_right{
+    float: right;
+}
+
+%a{
+    text-decoration: none;
+}
+
+%aHover{
+    text-decoration: underline;
+}
+
 // spaces
 .simple_space_top{
     margin-top: 30px !important;
 }
 
 .section_space{
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .row_space{
@@ -37,10 +53,11 @@ a:hover{
 
 .col_space{
     margin: {
-        top: 30px;
-        bottom: 30px;
+        top: 30px !important;
+        bottom: 30px !important;
     }
 }
+
 
 // align
 .text-center{
@@ -76,7 +93,6 @@ a:hover{
 .body_bg_light_deep_font_color{
     color: $body_bg_light_deep_font_color;
 }
-
 
 // bg color
 .body_bg{

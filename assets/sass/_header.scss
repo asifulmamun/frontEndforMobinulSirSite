@@ -33,7 +33,7 @@
     border: none;
     border-radius: 5px 0 0 5px;
     background-color: $body_bg;
-    font-size: 13px !important;
+    font-size: $menu_font_size !important;
 }
   
 .top_search form.top_search_form button{
@@ -70,9 +70,9 @@
     ul{
         li{
             a{
-                color: #fff;
+                color: $menu_font_color;
                 text-decoration: none;
-                font-size: 13px;
+                font-size: $menu_font_size;
                 padding: 10px 5px 10px 15px !important;
                 font-weight: 300;
             }
@@ -106,7 +106,7 @@
     padding: 8px 15px !important;
     margin: 0px 10px !important;
     border-radius: 3px;
-    font-size: 13px;
+    font-size: $menu_font_size;
     text-decoration: none;
 }
 
