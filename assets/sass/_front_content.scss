@@ -70,7 +70,20 @@
             color: $font_color;
             text-transform: uppercase;
         }
-    }
+    }/* main heading */
+
+    #shortBy{
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        float: right;
+        cursor: pointer;
+    
+        svg{
+            width: 100%;
+            height: 70%;
+        }
+    }/* short by */
 
     // services content
     #services_content{
@@ -95,7 +108,15 @@
         
             // rating
             .rating{
-                padding: 0px 7px;
+                padding: 3px 7px;
+
+                .rating_icon{
+                    svg{
+                        width: 16px;
+                        height: 16px;
+                        cursor: pointer;
+                    }
+                }
             }/* rating */
             
             // title

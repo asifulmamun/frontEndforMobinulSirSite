@@ -42,8 +42,16 @@
 // 	border-spacing: 0;
 // }
 
+// scroll remove
+html{
+    margin: 0 !important;
+    padding: 0 i !important;
+    overflow-x: hidden !important;
+}
+
 // Reset - All
 *{
     margin: 0;
     padding: 0;
 }
+

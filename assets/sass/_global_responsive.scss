@@ -1,0 +1,91 @@
+// main menu
+.main_menu{
+    .main_menu_icon{
+        display: none;
+    }
+}
+
+
+/* 
+    ------ Only Small Phone - Small
+*/
+@media only screen and (max-width:575px){
+
+
+}/* media sm or small - max 575*/
+
+
+
+/* 
+    ------ Only Phone (Medium) - Medium
+*/
+@media only screen and (min-width:576px) and (max-width:767px){
+
+}/* media md 576-767 */
+
+
+
+/* 
+    ------ Only Small Phone - Small & Medium
+*/
+@media only screen and (max-width:767px){
+
+    // header
+    #header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 70px;
+
+        .top_search{
+            display: none;
+        }/* top search */
+
+
+        // main menu
+        .main_menu{
+            .main_menu_icon{
+                float: right;
+                cursor: pointer;
+                display: block;
+        
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    color: $menu_font_color;
+                }/* svg */
+            }/* main menu icon */
+
+            ul{
+                display: none;
+                background-color: $bg_deep;
+                padding: 20px 15px 20px 0px;
+
+                li{
+                    width: 100%;
+                    text-align: right;
+                    text-transform: uppercase;
+                    line-height: 30px;
+                }/* li */
+                
+                // btn sell service
+                .btn_sell_service{
+                    margin: 10px 0px !important;
+                }/* btn_sell_service */
+            }/* ul */
+        }/* main menu */
+    }/* header */
+
+
+    // footer
+    #footer{
+             .row{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+
+    
+}/* media small and mobile or medium device*/
