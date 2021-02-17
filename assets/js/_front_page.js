@@ -19,19 +19,20 @@ document.getElementById('vertical_icon').addEventListener('click', function(){
         document.getElementById('vertical_icon').style.display = 'none';
         document.getElementById('horizontal_icon').style.display = 'block';
 
-        // remove class
+        // remove class - bootstrap grid
         document.getElementById('services_1st_row').classList.remove("row-cols-md-5");
         document.getElementById('services_1st_row').classList.remove("row-cols-lg-5");
         document.getElementById('services_1st_row').classList.remove("row-cols-xl-5");
         document.getElementById('services_1st_row').classList.remove("row-cols-xxl-5");
 
-        // add class
+        // add class - bootstrap grid
         document.getElementById('services_1st_row').classList.add("row-cols-md-2");
         document.getElementById('services_1st_row').classList.add("row-cols-lg-2");
         document.getElementById('services_1st_row').classList.add("row-cols-xl-2");
         document.getElementById('services_1st_row').classList.add("row-cols-xxl-2");
 
-
+        // add class for horizontal style
+        document.getElementById('services_content').classList.add("services_content_horizontal");
 
     }
 });/* when vertical icon click */
@@ -44,17 +45,20 @@ document.getElementById('horizontal_icon').addEventListener('click', function(){
         document.getElementById('horizontal_icon').style.display = 'none';
         document.getElementById('vertical_icon').style.display = 'block';
 
-        // remove class
+        // remove class - bootstrap grid
         document.getElementById('services_1st_row').classList.remove("row-cols-md-2");
         document.getElementById('services_1st_row').classList.remove("row-cols-lg-2");
         document.getElementById('services_1st_row').classList.remove("row-cols-xl-2");
         document.getElementById('services_1st_row').classList.remove("row-cols-xxl-2");
 
-        // add class
+        // add class - bootstrap grid
         document.getElementById('services_1st_row').classList.add("row-cols-md-5");
         document.getElementById('services_1st_row').classList.add("row-cols-lg-5");
         document.getElementById('services_1st_row').classList.add("row-cols-xl-5");
         document.getElementById('services_1st_row').classList.add("row-cols-xxl-5");
+
+         // remove class for horizontal style
+         document.getElementById('services_content').classList.remove("services_content_horizontal");
 
     }
 });/* when horizontal icon click */

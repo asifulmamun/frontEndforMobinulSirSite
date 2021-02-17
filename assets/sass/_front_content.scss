@@ -178,3 +178,26 @@
 
 
 }/* service section */
+
+
+/* 
+    ----- When services sectino HORIZONTAL
+*/
+.services_content_horizontal{
+    .services_container{
+        width: 95% !important;
+        height: auto !important;
+        overflow-x: hidden !important;
+
+        .title{
+            padding: 5px 7px !important;
+        }
+
+        .services_thumb{
+            width: 40%;
+            height: auto;
+            float: left;
+            margin-right: 1.5%;
+        }/* services_thumb */
+    }/* services_container */
+}/* services_content_horizontal */
