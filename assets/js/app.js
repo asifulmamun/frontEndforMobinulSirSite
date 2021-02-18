@@ -6,16 +6,16 @@ var main_menu_icon = '<svg aria-hidden="true" focusable="false" data-prefix="fas
 document.getElementById('main_menu_icon').innerHTML = main_menu_icon;
 
 // menu click function
-document.getElementById('main_menu_icon').addEventListener('click', function(){
+document.getElementById('main_menu_icon').addEventListener('click', function () {
 
-    if(document.getElementById('main_menu_ul_id').style.display === 'block'){
+    if (document.getElementById('main_menu_ul_id').style.display === 'block') {
 
         document.getElementById('main_menu_ul_id').style.display = 'none';
 
-    } else{
+    } else {
 
         document.getElementById('main_menu_ul_id').style.display = 'block';
-        
+
     }
 });/* menu click function */
 
@@ -35,26 +35,63 @@ function getDocHeight() {
 }
 
 // Get Parent of Scrolled window
-function amountscrolled(){
-    var winheight= window.innerHeight || (document.documentElement || document.body).clientHeight;
+function amountscrolled() {
+    var winheight = window.innerHeight || (document.documentElement || document.body).clientHeight;
     var docheight = getDocHeight();
     var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
     var trackLength = docheight - winheight;
-    var pctScrolled = Math.floor(scrollTop/trackLength * 100); // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+    var pctScrolled = Math.floor(scrollTop / trackLength * 100); // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
 
     // Return value of Scrolled Parcent
     return pctScrolled;
-}
+}/* parcent of scrolled */
 
+// Initial state for detection direction
+var scrollPos = 0;
 // If window Scroll This Function will Execute
-window.addEventListener("scroll", function(){
-    if(5 > amountscrolled()){
-        document.getElementById('header').classList.remove("header_menu_fixed");
-    }else if(10 > amountscrolled()){
-        document.getElementById('header').style.animationName = 'menu_animation_out';
-    }else{
-        document.getElementById('header').classList.add("header_menu_fixed");
-        document.getElementById('header').style.animationName = 'menu_animation_in';
+window.addEventListener("scroll", function () {
 
-    }
-}, false);
+    // direction detection if scroll up return true otherwise nothing
+    function direction_detect() {
+        // detects new state and compares it with the new one
+        if ((document.body.getBoundingClientRect()).top > scrollPos) {
+            return true;
+        }
+        // saves the new position for iteration.
+        scrollPos = (document.body.getBoundingClientRect()).top;
+    }/* direction detection */
+
+    // Main Menu Function - fixed/absolute/animation
+    if (7 > amountscrolled()) {
+
+        let header = document.getElementById('header').style;
+        header.position = 'absolute';
+        header.animationName = 'unset';
+        header.animationDuration = 'unset';
+
+    } else if (direction_detect() === true && 10 > amountscrolled() && amountscrolled() > 7) {
+
+        let header = document.getElementById('header').style;
+        header.width = '100%';
+        header.zIndex = '9';
+        header.animationName = 'menu_animation_out';
+        header.animationDuration = '3s';
+
+        setTimeout(() => {
+
+            let header = document.getElementById('header').style;
+            header.position = 'absolute';
+
+        }, 500);
+
+    } else if(7 < amountscrolled()){
+
+        let header = document.getElementById('header').style;
+        header.position = 'fixed';
+        header.width = '100%';
+        header.zIndex = '9';
+        header.animationName = 'menu_animation_in';
+        header.animationDuration = '3s';
+
+    }/* Main Menu Function - fixed/absolute/animation */
+}, true);/* scroll */

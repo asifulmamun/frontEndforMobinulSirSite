@@ -8763,25 +8763,14 @@ footer .copyright span a {
   /* services_content */
 }
 /* media sm or small - max 575*/
-.header_menu_fixed {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 9;
-  animation-name: menu_animation_in;
-  animation-duration: 3s;
-}
-
 @keyframes menu_animation_in {
   from {
     top: -100px;
     opacity: 0;
   }
   to {
-    position: fixed;
     top: 0px;
-    left: 0;
+    left: 0px;
     width: 100%;
     opacity: 1;
     z-index: 9;
@@ -8793,7 +8782,6 @@ footer .copyright span a {
     opacity: 1;
   }
   to {
-    position: fixed;
     top: -100px;
     opacity: 0;
   }

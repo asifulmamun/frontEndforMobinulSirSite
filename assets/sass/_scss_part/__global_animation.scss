@@ -1,14 +1,4 @@
-// when window scrolling it will work - ./app. it's for menu animation
-.header_menu_fixed{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 9;
-    animation-name: menu_animation_in;
-    animation-duration: 3s;
-}
-
+// main menu fixed animation - execute from app.js
 @keyframes menu_animation_in{
     from{
         top: -100px;
@@ -16,28 +6,27 @@
 
     }
     to{
-        position: fixed;
         top: 0px;
-        left: 0;
+        left: 0px;
         width: 100%;
         opacity: 1;
         z-index: 9;
     }
 }
+// main menu fixed animation - execute from app.js
 @keyframes menu_animation_out{
     from{
         top: 0px;
         opacity: 1;
     }
     to{
-        position: fixed;
         top: -100px;
         opacity: 0;
     }
 }
 
 
-// menu ul animation
+// menu ul animation for medium and small device
 @media only screen and (max-width:767px){
     .main_menu{
         ul{
@@ -59,3 +48,5 @@
     }/* keyframe */
 
 }/* medium and samll */
+
+
