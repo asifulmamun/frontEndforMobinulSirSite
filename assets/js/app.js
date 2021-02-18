@@ -14,7 +14,47 @@ document.getElementById('main_menu_icon').addEventListener('click', function(){
 
     } else{
 
-        document.getElementById('main_menu_ul_id').style.display = 'block'
+        document.getElementById('main_menu_ul_id').style.display = 'block';
         
     }
 });/* menu click function */
+
+
+/* 
+    ------ Main Menu Scrolling and Display Fixed
+*/
+
+// Get Document Height
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    );
+}
+
+// Get Parent of Scrolled window
+function amountscrolled(){
+    var winheight= window.innerHeight || (document.documentElement || document.body).clientHeight;
+    var docheight = getDocHeight();
+    var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    var trackLength = docheight - winheight;
+    var pctScrolled = Math.floor(scrollTop/trackLength * 100); // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+
+    // Return value of Scrolled Parcent
+    return pctScrolled;
+}
+
+// If window Scroll This Function will Execute
+window.addEventListener("scroll", function(){
+    if(5 > amountscrolled()){
+        document.getElementById('header').classList.remove("header_menu_fixed");
+    }else if(10 > amountscrolled()){
+        document.getElementById('header').style.animationName = 'menu_animation_out';
+    }else{
+        document.getElementById('header').classList.add("header_menu_fixed");
+        document.getElementById('header').style.animationName = 'menu_animation_in';
+
+    }
+}, false);

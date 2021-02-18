@@ -8332,7 +8332,6 @@ html {
 */
 @media only screen and (max-width: 767px) {
   #banner_section {
-    margin-top: 70px;
     /* banner */
   }
   #banner_section .banner {
@@ -8391,7 +8390,6 @@ html {
 */
 @media only screen and (max-width: 575px) {
   #banner_section {
-    margin-top: 70px;
     /* banner */
   }
   #banner_section .banner {
@@ -8562,7 +8560,7 @@ html {
   width: 70px;
   height: 20px;
   background-image: url(../img/featured_icon.png);
-  z-index: 100;
+  z-index: 2;
 }
 
 /* service section */
@@ -8660,12 +8658,9 @@ footer .copyright span a {
 */
 @media only screen and (max-width: 767px) {
   #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
     width: 100%;
     height: 70px;
+    padding: 15px 15px 10px 15px !important;
     /* top search */
     /* main menu */
   }
@@ -8680,6 +8675,7 @@ footer .copyright span a {
     float: right;
     cursor: pointer;
     display: block;
+    position: relative;
     /* svg */
   }
   #header .main_menu .main_menu_icon svg {
@@ -8691,6 +8687,11 @@ footer .copyright span a {
     display: none;
     background-color: #222E3D;
     padding: 20px 15px 20px 0px;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 99;
     /* li */
     /* btn_sell_service */
   }
@@ -8762,5 +8763,61 @@ footer .copyright span a {
   /* services_content */
 }
 /* media sm or small - max 575*/
+.header_menu_fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9;
+  animation-name: menu_animation_in;
+  animation-duration: 3s;
+}
+
+@keyframes menu_animation_in {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    z-index: 9;
+  }
+}
+@keyframes menu_animation_out {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    position: fixed;
+    top: -100px;
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main_menu ul {
+    animation-name: height_full;
+    animation-duration: 0.5s;
+  }
+
+  /* main menu */
+  @keyframes height_full {
+    from {
+      width: 0%;
+      height: auto;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  /* keyframe */
+}
+/* medium and samll */
 
 /*# sourceMappingURL=style.css.map */

@@ -32,12 +32,10 @@
 
     // header
     #header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
         width: 100%;
         height: 70px;
+
+        padding: 15px 15px 10px 15px !important;;
 
         .top_search{
             display: none;
@@ -50,6 +48,7 @@
                 float: right;
                 cursor: pointer;
                 display: block;
+                position: relative;
         
                 svg{
                     width: 30px;
@@ -62,6 +61,11 @@
                 display: none;
                 background-color: $bg_deep;
                 padding: 20px 15px 20px 0px;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                z-index: 99;
 
                 li{
                     width: 100%;
@@ -81,7 +85,7 @@
 
     // footer
     #footer{
-             .row{
+            .row{
             margin: 0 !important;
             padding: 0 !important;
         }
