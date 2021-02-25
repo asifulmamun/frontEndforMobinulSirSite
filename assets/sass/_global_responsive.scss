@@ -26,12 +26,13 @@
 
 
 /* 
-    ------ Only Small Phone - Small & Medium
+    ------ Only Small Phone - Medium and Small
 */
 @media only screen and (max-width:767px){
 
     // header
     #header{
+        position: absolute;
         width: 100%;
         height: 70px;
 

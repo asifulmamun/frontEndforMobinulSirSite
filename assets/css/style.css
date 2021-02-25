@@ -2217,13 +2217,14 @@ html {
 }
 
 /* 
-    ------ Only Small Phone - Small & Medium
+    ------ Only Small Phone - Medium and Samll
 */
 @media only screen and (max-width: 767px) {
   #banner_section {
     /* banner */
   }
   #banner_section .banner {
+    margin-top: 70px;
     /* banner_content */
   }
   #banner_section .banner .banner_content {
@@ -2293,10 +2294,10 @@ html {
   #banner_section .banner .banner_content .big_search form.big_search_form input[type=text] {
     padding: 5px 3px 5px 5px !important;
     font-size: 12px !important;
-    width: 80%;
+    width: 65%;
   }
   #banner_section .banner .banner_content .big_search form.big_search_form button {
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
 
   /* banner_section */
@@ -2542,10 +2543,11 @@ footer .copyright span a {
 */
 /* media md 576-767 */
 /* 
-    ------ Only Small Phone - Small & Medium
+    ------ Only Small Phone - Medium and Small
 */
 @media only screen and (max-width: 767px) {
   #header {
+    position: absolute;
     width: 100%;
     height: 70px;
     padding: 15px 15px 10px 15px !important;

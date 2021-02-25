@@ -90,7 +90,7 @@ window.addEventListener("scroll", function () {
     if (7 > amountscrolled()) {
 
         let header = document.getElementById('header').style;
-        header.position = 'unset';
+        header.position = 'absolute';
         header.animationName = 'unset';
         header.animationDuration = 'unset';
 
