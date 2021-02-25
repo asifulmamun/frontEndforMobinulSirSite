@@ -1,0 +1,74 @@
+
+/* 
+    ----- Banner
+*/
+.banner{
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banner_content{
+        @extend %center_absolute;
+        
+        .big_search{
+            box-sizing: border-box;
+
+            form.big_search_form{
+                box-sizing: border-box;
+
+                input[type=text]{
+                    float: left;
+                    padding: 15px 65px 15px 15px !important;
+                    border: none;
+                    background-color: #f4f5f8;
+                    font-size: 18px !important;
+                    border-radius: 5px 0 0 5px;
+                    box-sizing: border-box;
+                }/* input text */
+
+                button{
+                    float: left;
+                    padding: 15px 22px !important;
+                    border: none;
+                    background-color: #00B760;
+                    font-size: 18px !important;
+                    cursor: pointer;
+                    border-radius: 0px 5px 5px 0px;
+                    box-sizing: border-box;
+                }/* button */
+            }/* form.big_search_form */
+
+            form.big_search_form::after{
+                content: "";
+                clear: both;
+                display: table;
+                box-sizing: border-box;
+            }/* form.big_search_form::after */
+            
+        }/* big_search */
+
+        // banner heading
+        .banner_heading{
+            color: #fff;
+            font-size: 28px;
+            font-weight: 500;
+            text-shadow: -3px 3px 4px #000;
+        }
+    }/* banner_content */
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include bg_color(161deg, #000000bd, #00000052, #00000091);
+}
+
+// Banner Responsive
+@import "./__banner_responsive.scss";

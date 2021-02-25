@@ -48,6 +48,12 @@
                 background-color: $primary_color;
                 font-size: 13px !important;
                 cursor: pointer;
+
+                i{
+                    svg{
+                        width: 12px;
+                    }
+                }
             }
         }/* form.top_search_form */
 
@@ -76,6 +82,13 @@
                     font-size: $menu_font_size;
                     padding: 10px 5px 10px 15px !important;
                     font-weight: 300;
+
+                    i{
+                        svg{
+                            width: 14px;
+                            margin-right: 3px;
+                        }
+                    }
                 }
     
                 a:hover{

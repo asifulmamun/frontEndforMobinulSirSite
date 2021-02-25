@@ -1,0 +1,100 @@
+/* 
+    ------ Only Small Phone - Small & Medium
+*/
+@media only screen and (max-width:767px){
+   #banner_section{
+       .banner{
+           .banner_content{
+               .banner_heading{
+                font-size: 18px;
+
+               }/* banner heading */
+               
+               .big_search{
+
+                    form.big_search_form{
+
+                        input[type=text]{
+                            padding: 5px 10px 5px 10px!important;
+                            font-size: 12px !important;
+                        }
+
+                        button{
+                            padding: 5px 10px 5px 10px!important;
+                            font-size: 12px !important;
+                        }
+                    }
+               }/* big search */
+           }/* banner_content */
+       }/* banner */
+   }/* banner_section */
+
+}/* media small and mobile or medium device*/
+
+
+/* 
+    ------ Only Phone (Medium) - Medium
+*/
+@media only screen and (min-width:576px) and (max-width:767px){
+    #banner_section{
+        margin-top: 70px;
+ 
+        .banner{
+            .banner_content{
+                .banner_heading{
+                 font-size: 24px;
+ 
+                }/* banner heading */
+                
+                .big_search{
+ 
+                     form.big_search_form{
+ 
+                         input[type=text]{
+                             padding: 5px 30px 5px 10px!important;
+                             font-size: 16px !important;
+                         }
+ 
+                         button{
+                             font-size: 16px !important;
+                         }
+                     }
+                }/* big search */
+            }/* banner_content */
+        }/* banner */
+    }/* banner_section */
+}/* media md 576-767 */
+
+
+/* 
+    ------ Only Small Phone - Small
+*/
+@media only screen and (max-width:575px){
+    #banner_section{ 
+        .banner{
+            .banner_content{
+                .banner_heading{
+                 font-size: 15px;
+ 
+                }/* banner heading */
+                
+                .big_search{
+ 
+                     form.big_search_form{
+ 
+                         input[type=text]{
+                             padding: 5px 3px 5px 5px!important;
+                             font-size: 12px !important;
+                             width: 80%;
+                         }
+ 
+                         button{
+                             font-size: 12px !important;
+                         }
+                     }
+                }/* big search */
+            }/* banner_content */
+        }/* banner */
+    }/* banner_section */
+
+}/* media sm or small - max 575*/

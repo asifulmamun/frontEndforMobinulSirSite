@@ -38,6 +38,12 @@
                     cursor: pointer;
                     border-radius: 0px 5px 5px 0px;
                     box-sizing: border-box;
+
+                    i{
+                        svg{
+                            width: 18px;;
+                        }
+                    }
                 }/* button */
             }/* form.big_search_form */
 

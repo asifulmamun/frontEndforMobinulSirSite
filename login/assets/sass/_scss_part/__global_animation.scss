@@ -1,0 +1,52 @@
+// main menu fixed animation - execute from app.js
+@keyframes menu_animation_in{
+    from{
+        top: -100px;
+        opacity: 0;
+
+    }
+    to{
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        opacity: 1;
+        z-index: 9;
+    }
+}
+// main menu fixed animation - execute from app.js
+@keyframes menu_animation_out{
+    from{
+        top: 0px;
+        opacity: 1;
+    }
+    to{
+        top: -100px;
+        opacity: 0;
+    }
+}
+
+
+// menu ul animation for medium and small device
+@media only screen and (max-width:767px){
+    .main_menu{
+        ul{
+            animation-name: height_full;
+            animation-duration: 0.5s;
+        }
+    }/* main menu */
+
+    @keyframes height_full {
+        from{
+            width: 0%;
+            height: auto;
+            opacity: 0;
+        }
+        to{
+            width: 100%;
+            opacity: 1;
+        }
+    }/* keyframe */
+
+}/* medium and samll */
+
+
