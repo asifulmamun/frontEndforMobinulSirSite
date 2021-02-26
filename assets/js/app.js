@@ -3,9 +3,9 @@
     -------------   FontAwesome/Any SVG Icon Function
     -------------
 */
-function svg_icon(icon_class, icon){   
+function svg_icon(icon_class, icon) {
     var icon_loop;
-    for (icon_loop = 0; icon_loop < document.getElementsByClassName('fa-search').length; icon_loop++){
+    for (icon_loop = 0; icon_loop < document.getElementsByClassName('fa-search').length; icon_loop++) {
         document.querySelectorAll(icon_class)[icon_loop].innerHTML = icon;
     }
 }
@@ -14,19 +14,19 @@ function svg_icon(icon_class, icon){
     --------- Menu
 */
 // Mobile Menu - Toggle
-svg_icon('.fa-bars', '<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>');
+document.getElementById('main_menu_icon').innerHTML = '<nav id="toggle_menu"><div class="toggle_item_top"></div><div class="toggle_item_middle"></div><div class="toggle_item_bottom"></div></nav>';
 
 // menu click function - Toggle
 document.getElementById('main_menu_icon').addEventListener('click', function () {
+    // toggle menu icon - open/close
+    document.querySelector('.toggle_item_top').classList.toggle('toggle_item_top_hover');
+    document.querySelector('.toggle_item_middle').classList.toggle('toggle_item_middle_hover');
+    document.querySelector('.toggle_item_bottom').classList.toggle('toggle_item_bottom_hover');
 
     if (document.getElementById('main_menu_ul_id').style.display === 'block') {
-
         document.getElementById('main_menu_ul_id').style.display = 'none';
-
     } else {
-
         document.getElementById('main_menu_ul_id').style.display = 'block';
-
     }
 });/* menu click function */
 
@@ -45,6 +45,7 @@ svg_icon('.fa-sign-in-alt', '<svg aria-hidden="true" focusable="false" data-pref
 
 // Search Icon
 svg_icon('.fa-search', '<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" /></svg>');
+
 
 /* 
     ------ Main Menu Scrolling and Display Fixed
@@ -109,7 +110,7 @@ window.addEventListener("scroll", function () {
 
         }, 500);
 
-    } else if(7 < amountscrolled()){
+    } else if (7 < amountscrolled()) {
 
         let header = document.getElementById('header').style;
         header.position = 'fixed';

@@ -115,6 +115,61 @@
     }/* main_menu */
 }/* header */
 
+
+
+#toggle_menu {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#toggle_menu .toggle_item_top {
+    width: 100%;
+    border-top: .4em solid $body_bg;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.5s;
+}
+
+#toggle_menu .toggle_item_middle {
+    width: 100%;
+    border-bottom: .4em solid $body_bg;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+#toggle_menu .toggle_item_bottom {
+    width: 100%;
+    border-bottom: .4em solid $body_bg;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transition: 0.5s;
+}
+
+.toggle_item_top_hover {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.toggle_item_middle_hover {
+    opacity: 0;
+}
+
+.toggle_item_bottom_hover {
+    bottom: 50% !important;
+    right: 50% !important;
+    transform: translate(50%, 50%) rotateZ(45deg);
+}
+
+
 /* 
     -------- Banner
 */
