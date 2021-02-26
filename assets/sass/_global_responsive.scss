@@ -34,9 +34,8 @@
     #header{
         position: absolute;
         width: 100%;
-        height: 70px;
-
-        padding: 15px 15px 10px 15px !important;;
+        height: 7.0rem;
+        padding: 1.5rem 1.5rem 1.0rem 1.5rem !important;
 
         .top_search{
             display: none;
@@ -52,8 +51,8 @@
                 position: relative;
         
                 svg{
-                    width: 30px;
-                    height: 30px;
+                    width: 3.0rem;
+                    height: 3.0rem;
                     color: $menu_font_color;
                 }/* svg */
             }/* main menu icon */
@@ -61,10 +60,10 @@
             ul{
                 display: none;
                 background-color: $bg_deep;
-                padding: 20px 15px 20px 0px;
+                padding: 2.0rem 1.5rem 2.0rem 0rem;
                 width: 100%;
                 position: absolute;
-                top: 70px;
+                top: 7.0rem;
                 right: 0;
                 z-index: 99;
 
@@ -72,12 +71,12 @@
                     width: 100%;
                     text-align: right;
                     text-transform: uppercase;
-                    line-height: 30px;
+                    line-height: 3.0rem;
                 }/* li */
                 
                 // btn sell service
                 .btn_sell_service{
-                    margin: 10px 0px !important;
+                    margin: 1.0rem 0rem !important;
                 }/* btn_sell_service */
             }/* ul */
         }/* main menu */
@@ -90,7 +89,7 @@
             margin: 0 !important;
             padding: 0 !important;
         }
-    }
+    }/* footer */
 
     
 }/* media small and mobile or medium device*/

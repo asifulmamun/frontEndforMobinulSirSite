@@ -21,27 +21,27 @@
 
                 input[type=text]{
                     float: left;
-                    padding: 15px 65px 15px 15px !important;
+                    padding: 1.5rem 6.5rem 1.5rem 1.5rem !important;
                     border: none;
                     background-color: #f4f5f8;
-                    font-size: 18px !important;
-                    border-radius: 5px 0 0 5px;
+                    font-size: 1.8rem !important;
+                    border-radius: .5rem 0 0 .5rem;
                     box-sizing: border-box;
                 }/* input text */
 
                 button{
                     float: left;
-                    padding: 15px 22px !important;
+                    padding: 1.5rem 2.2rem !important;
                     border: none;
                     background-color: #00B760;
-                    font-size: 18px !important;
+                    font-size: 1.8rem !important;
                     cursor: pointer;
-                    border-radius: 0px 5px 5px 0px;
+                    border-radius: 0rem .5rem .5rem 0rem;
                     box-sizing: border-box;
 
                     i{
                         svg{
-                            width: 18px;;
+                            width: 1.8rem;;
                         }
                     }
                 }/* button */
@@ -59,9 +59,9 @@
         // banner heading
         .banner_heading{
             color: #fff;
-            font-size: 28px;
+            font-size: 2.8rem;
             font-weight: 500;
-            text-shadow: -3px 3px 4px #000;
+            text-shadow: -.3rem .3rem .4rem #000;
         }
     }/* banner_content */
 }

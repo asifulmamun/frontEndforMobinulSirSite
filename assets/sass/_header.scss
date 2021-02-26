@@ -2,12 +2,12 @@
     ----- Header
 */
 #header{
-    padding: 20px 15px 10px 15px !important;
+    padding: 2.0rem 1.5rem 1.0rem 1.5rem !important;
 
     .logo{
         float: left;
-        margin-right: 15px !important;
-        padding-top: 4px !important;
+        margin-right: 1.5rem !important;
+        padding-top: .4rem !important;
         
         span{
             font-size: $logo_font_size;
@@ -22,7 +22,7 @@
         float: left;
         width: 40%;
         box-sizing: border-box;
-        margin-top: 5px;
+        margin-top: .5rem;
 
         form.top_search_form{
             box-sizing: border-box;
@@ -34,24 +34,24 @@
             input[type=text]{
                 float: left;
                 width: 80%;
-                padding: 5px !important;
+                padding: .5rem !important;
                 border: none;
-                border-radius: 5px 0 0 5px;
+                border-radius: .5rem 0 0 .5rem;
                 background-color: $body_bg;
                 font-size: $menu_font_size !important;
             }
 
             button{
                 float: left;
-                padding: 5px 7px !important;
+                padding: .5rem .7rem !important;
                 border: none;
                 background-color: $primary_color;
-                font-size: 13px !important;
+                font-size: 1.3rem !important;
                 cursor: pointer;
 
                 i{
                     svg{
-                        width: 12px;
+                        width: 1.2rem;
                     }
                 }
             }
@@ -67,7 +67,7 @@
 
     .main_menu{
         float: right;
-        padding-top: 5px !important;
+        padding-top: .5rem !important;
     
         ul{
             float: right;
@@ -80,13 +80,13 @@
                     color: $menu_font_color;
                     text-decoration: none;
                     font-size: $menu_font_size;
-                    padding: 10px 5px 10px 15px !important;
+                    padding: 1.0rem .5rem 1.0rem 1.5rem !important;
                     font-weight: 300;
 
                     i{
                         svg{
-                            width: 14px;
-                            margin-right: 3px;
+                            width: 1.4rem;
+                            margin-right: .3rem;
                         }
                     }
                 }
@@ -100,9 +100,9 @@
             // btn sell service
             .btn_sell_service{
                 background-color: #00B760;
-                padding: 8px 15px !important;
-                margin: 0px 10px !important;
-                border-radius: 3px;
+                padding: .8rem 1.5rem !important;
+                margin: 0rem 1.0rem !important;
+                border-radius: .3rem;
                 font-size: $menu_font_size;
                 text-decoration: none;
                 float: right;

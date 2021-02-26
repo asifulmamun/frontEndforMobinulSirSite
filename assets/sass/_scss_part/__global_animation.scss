@@ -1,13 +1,13 @@
 // main menu fixed animation - execute from app.js
 @keyframes menu_animation_in{
     from{
-        top: -100px;
+        top: -10.0rem;
         opacity: 0;
 
     }
     to{
-        top: 0px;
-        left: 0px;
+        top: 0rem;
+        left: 0rem;
         width: 100%;
         opacity: 1;
         z-index: 9;
@@ -16,11 +16,11 @@
 // main menu fixed animation - execute from app.js
 @keyframes menu_animation_out{
     from{
-        top: 0px;
+        top: 0rem;
         opacity: 1;
     }
     to{
-        top: -100px;
+        top: -10.0rem;
         opacity: 0;
     }
 }

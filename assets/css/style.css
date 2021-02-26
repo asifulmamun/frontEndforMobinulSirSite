@@ -1,143 +1,8 @@
 @charset "UTF-8";
-/* 
-    ----- Template Css - Global
-*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-html {
-  margin: 0 !important;
-  padding: 0 i !important;
-  overflow-x: hidden !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  color: #383a3c;
-  background-color: #f4f5f8;
-  width: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow-x: hidden !important;
-  height: auto;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-}
-
-a {
-  text-decoration: none;
-  color: #383a3c;
-}
-
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.float_left {
-  float: left;
-}
-
-.float_right {
-  float: right;
-}
-
-footer .copyright span a, footer .col_container .content ul a {
-  text-decoration: none;
-}
-
-footer .col_container .content ul a:hover {
-  text-decoration: underline;
-}
-
-.simple_space_top {
-  margin-top: 30px !important;
-}
-
-.section_space {
-  margin: 50px 0;
-}
-
-.row_space {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.col_space {
-  margin-top: 30px !important;
-  margin-bottom: 30px !important;
-}
-
-@media only screen and (max-width: 767px) {
-  .col_space {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
-  }
-}
-/* media small and mobile or medium device*/
-.text-center {
-  text-align: center;
-}
-
-.font_color {
-  color: #383a3c;
-}
-
-.font_white {
-  color: #ffffff;
-}
-
-.primary_color {
-  color: #00B760;
-}
-
-.primary_color_light {
-  color: #00EA7B;
-}
-
-.secodary_color {
-  color: #B70057;
-}
-
-.secodary_color_light {
-  color: #EA006F;
-}
-
-.body_bg_light_deep_font_color {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.body_bg {
-  background-color: #f4f5f8;
-}
-
-.body_bg_light_deep {
-  background-color: #ebecef;
-}
-
-.bg_deep {
-  background-color: #222E3D;
-}
-
-/* 
-    ------ Center Absolute under relative
-*/
-.banner .banner_content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
 /*
     ---- Bootstap
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -184,7 +49,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #f4f5f8;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2026,7 +1891,7 @@ progress {
   }
 }
 /* 
-    ----- Template Css- Content
+    ----- Template Css - Global
 */
 html {
   margin: 0 !important;
@@ -2039,23 +1904,148 @@ html {
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #383a3c;
+  background-color: #f4f5f8;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #383a3c;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+footer .copyright span a, footer .col_container .content ul a {
+  text-decoration: none;
+}
+
+footer .col_container .content ul a:hover {
+  text-decoration: underline;
+}
+
+.simple_space_top {
+  margin-top: 3rem !important;
+}
+
+.section_space {
+  margin: 5rem 0;
+}
+
+.row_space {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.col_space {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+@media only screen and (max-width: 767rem) {
+  .col_space {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+/* media small and mobile or medium device*/
+.text-center {
+  text-align: center;
+}
+
+.font_color {
+  color: #383a3c;
+}
+
+.font_white {
+  color: #ffffff;
+}
+
+.primary_color {
+  color: #00B760;
+}
+
+.primary_color_light {
+  color: #00EA7B;
+}
+
+.secodary_color {
+  color: #B70057;
+}
+
+.secodary_color_light {
+  color: #EA006F;
+}
+
+.body_bg_light_deep_font_color {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.body_bg {
+  background-color: #f4f5f8;
+}
+
+.body_bg_light_deep {
+  background-color: #ebecef;
+}
+
+.bg_deep {
+  background-color: #222E3D;
+}
+
+/* 
+    ------ Center Absolute under relative
+*/
+.banner .banner_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
 /* 
     ----- Header
 */
 #header {
-  padding: 20px 15px 10px 15px !important;
+  padding: 2rem 1.5rem 1rem 1.5rem !important;
   /* logo */
   /* top search */
   /* main_menu */
 }
 #header .logo {
   float: left;
-  margin-right: 15px !important;
-  padding-top: 4px !important;
+  margin-right: 1.5rem !important;
+  padding-top: 0.4rem !important;
   /* logo text */
 }
 #header .logo span {
-  font-size: 20px;
+  font-size: 2rem;
 }
 #header .logo a {
   text-decoration: none;
@@ -2064,7 +2054,7 @@ html {
   float: left;
   width: 40%;
   box-sizing: border-box;
-  margin-top: 5px;
+  margin-top: 0.5rem;
   /* form.top_search_form */
   /* form.top_search_form::after */
 }
@@ -2077,22 +2067,22 @@ html {
 #header .top_search form.top_search_form input[type=text] {
   float: left;
   width: 80%;
-  padding: 5px !important;
+  padding: 0.5rem !important;
   border: none;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0.5rem 0 0 0.5rem;
   background-color: #f4f5f8;
-  font-size: 13px !important;
+  font-size: 1.3rem !important;
 }
 #header .top_search form.top_search_form button {
   float: left;
-  padding: 5px 7px !important;
+  padding: 0.5rem 0.7rem !important;
   border: none;
   background-color: #00B760;
-  font-size: 13px !important;
+  font-size: 1.3rem !important;
   cursor: pointer;
 }
 #header .top_search form.top_search_form button i svg {
-  width: 12px;
+  width: 1.2rem;
 }
 #header .top_search form.top_search_form::after {
   content: "";
@@ -2102,7 +2092,7 @@ html {
 }
 #header .main_menu {
   float: right;
-  padding-top: 5px !important;
+  padding-top: 0.5rem !important;
   /* ul */
 }
 #header .main_menu ul {
@@ -2117,13 +2107,13 @@ html {
 #header .main_menu ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
-  padding: 10px 5px 10px 15px !important;
+  font-size: 1.3rem;
+  padding: 1rem 0.5rem 1rem 1.5rem !important;
   font-weight: 300;
 }
 #header .main_menu ul li a i svg {
-  width: 14px;
-  margin-right: 3px;
+  width: 1.4rem;
+  margin-right: 0.3rem;
 }
 #header .main_menu ul li a:hover {
   color: #ebecef;
@@ -2131,10 +2121,10 @@ html {
 }
 #header .main_menu ul .btn_sell_service {
   background-color: #00B760;
-  padding: 8px 15px !important;
-  margin: 0px 10px !important;
-  border-radius: 3px;
-  font-size: 13px;
+  padding: 0.8rem 1.5rem !important;
+  margin: 0rem 1rem !important;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
   text-decoration: none;
   float: right;
 }
@@ -2173,25 +2163,25 @@ html {
 }
 .banner .banner_content .big_search form.big_search_form input[type=text] {
   float: left;
-  padding: 15px 65px 15px 15px !important;
+  padding: 1.5rem 6.5rem 1.5rem 1.5rem !important;
   border: none;
   background-color: #f4f5f8;
-  font-size: 18px !important;
-  border-radius: 5px 0 0 5px;
+  font-size: 1.8rem !important;
+  border-radius: 0.5rem 0 0 0.5rem;
   box-sizing: border-box;
 }
 .banner .banner_content .big_search form.big_search_form button {
   float: left;
-  padding: 15px 22px !important;
+  padding: 1.5rem 2.2rem !important;
   border: none;
   background-color: #00B760;
-  font-size: 18px !important;
+  font-size: 1.8rem !important;
   cursor: pointer;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
   box-sizing: border-box;
 }
 .banner .banner_content .big_search form.big_search_form button i svg {
-  width: 18px;
+  width: 1.8rem;
 }
 .banner .banner_content .big_search form.big_search_form::after {
   content: "";
@@ -2201,9 +2191,9 @@ html {
 }
 .banner .banner_content .banner_heading {
   color: #fff;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 500;
-  text-shadow: -3px 3px 4px #000;
+  text-shadow: -0.3rem 0.3rem 0.4rem #000;
 }
 
 .banner::before {
@@ -2224,7 +2214,7 @@ html {
     /* banner */
   }
   #banner_section .banner {
-    margin-top: 70px;
+    margin-top: 7rem;
     /* banner_content */
   }
   #banner_section .banner .banner_content {
@@ -2232,15 +2222,15 @@ html {
     /* big search */
   }
   #banner_section .banner .banner_content .banner_heading {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   #banner_section .banner .banner_content .big_search form.big_search_form input[type=text] {
-    padding: 5px 10px 5px 10px !important;
-    font-size: 12px !important;
+    padding: 0.5rem 1rem 0.5rem 1rem !important;
+    font-size: 1.2rem !important;
   }
   #banner_section .banner .banner_content .big_search form.big_search_form button {
-    padding: 5px 10px 5px 10px !important;
-    font-size: 12px !important;
+    padding: 0.5rem 1rem 0.5rem 1rem !important;
+    font-size: 1.2rem !important;
   }
 
   /* banner_section */
@@ -2261,14 +2251,14 @@ html {
     /* big search */
   }
   #banner_section .banner .banner_content .banner_heading {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
   #banner_section .banner .banner_content .big_search form.big_search_form input[type=text] {
-    padding: 5px 30px 5px 10px !important;
-    font-size: 16px !important;
+    padding: 0.5rem 3rem 0.5rem 1rem !important;
+    font-size: 1.6rem !important;
   }
   #banner_section .banner .banner_content .big_search form.big_search_form button {
-    font-size: 16px !important;
+    font-size: 1.6rem !important;
   }
 
   /* banner_section */
@@ -2289,37 +2279,40 @@ html {
     /* big search */
   }
   #banner_section .banner .banner_content .banner_heading {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   #banner_section .banner .banner_content .big_search form.big_search_form input[type=text] {
-    padding: 5px 3px 5px 5px !important;
-    font-size: 12px !important;
+    padding: 0.5rem 0.3rem 0.5rem 0.5rem !important;
+    font-size: 1.2rem !important;
     width: 65%;
   }
   #banner_section .banner .banner_content .big_search form.big_search_form button {
-    font-size: 10px !important;
+    font-size: 1rem !important;
   }
 
   /* banner_section */
 }
 /* media sm or small - max 575*/
+/* 
+    ----- Template Css- Content
+*/
 /*
     ------ catergory
 */
 .cat_container {
-  border: 1px solid #ccc;
-  height: 250px;
-  padding: 5px 5px;
+  border: 0.1rem solid #ccc;
+  height: 25rem;
+  padding: 0.5rem 0.5rem;
   overflow: hidden;
   background-color: #fff;
   display: inline-block;
-  box-shadow: 0 3px 7px #e0e0e0;
+  box-shadow: 0 0.3rem 0.7rem #e0e0e0;
   /* h2 */
 }
 .cat_container h2, .cat_container .h2 {
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 1.3rem;
 }
 .cat_container h2 a, .cat_container .h2 a {
   font-weight: 300;
@@ -2343,11 +2336,11 @@ html {
 
 /* category image */
 .cat_see_more {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 3px;
+  border-bottom: 0.1rem solid #ddd;
+  padding-bottom: 0.3rem;
 }
 .cat_see_more a {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #383a3c;
   text-decoration: none;
 }
@@ -2365,13 +2358,13 @@ html {
   /* services content */
 }
 #service .heading h2, #service .heading .h2 {
-  font-size: 22px;
+  font-size: 2.2rem;
   color: #383a3c;
   text-transform: uppercase;
 }
 #service #shortBy {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   overflow: hidden;
   float: right;
   cursor: pointer;
@@ -2384,12 +2377,12 @@ html {
   /* container */
 }
 #service #services_content .services_container {
-  width: 220px;
-  height: 280px;
-  border: 1px solid #ccc;
+  width: 22rem;
+  height: 28rem;
+  border: 0.1rem solid #ccc;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 3px 7px #e0e0e0;
+  box-shadow: 0 0.3rem 0.7rem #e0e0e0;
   /* rating */
   /* title */
   /* authore */
@@ -2397,25 +2390,25 @@ html {
   /* featured */
 }
 #service #services_content .services_container .services_thumb {
-  padding: 3px;
+  padding: 0.3rem;
 }
 #service #services_content .services_container .services_thumb img {
   width: 100%;
-  height: 150px;
+  height: 15rem;
 }
 #service #services_content .services_container .rating {
-  padding: 3px 7px;
+  padding: 0.3rem 0.7rem;
 }
 #service #services_content .services_container .rating .rating_icon svg {
-  width: 16px;
-  height: 16px;
+  width: 1.6rem;
+  height: 1.6rem;
   cursor: pointer;
 }
 #service #services_content .services_container .title {
-  padding: 0px 7px;
+  padding: 0rem 0.7rem;
 }
 #service #services_content .services_container .title h2, #service #services_content .services_container .title .h2 {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 #service #services_content .services_container .title h2 a, #service #services_content .services_container .title .h2 a {
   color: #383a3c;
@@ -2423,9 +2416,9 @@ html {
   text-decoration: none;
 }
 #service #services_content .services_container .author h4, #service #services_content .services_container .author .h4 {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #383a3c;
-  padding: 0 5px;
+  padding: 0 0.5rem;
   font-weight: 300;
 }
 #service #services_content .services_container .author h4 a, #service #services_content .services_container .author .h4 a {
@@ -2436,18 +2429,17 @@ html {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 300;
   color: #00B760;
-  padding-right: 5px;
-  padding-bottom: 5px;
+  padding: 0 0.5rem 0.5rem 0;
 }
 #service #services_content .services_container div.featured {
   position: absolute;
-  top: 8px;
-  left: 1px;
-  width: 70px;
-  height: 20px;
+  top: 0.8rem;
+  left: 0.1rem;
+  width: 7rem;
+  height: 2rem;
   background-image: url(../img/featured_icon.png);
   z-index: 2;
 }
@@ -2466,7 +2458,7 @@ html {
   /* services_thumb */
 }
 .services_content_horizontal .services_container .title {
-  padding: 5px 7px !important;
+  padding: 0.5rem 0.7rem !important;
 }
 .services_content_horizontal .services_container .services_thumb {
   width: 40%;
@@ -2481,7 +2473,7 @@ html {
 */
 footer {
   background-color: #222E3D;
-  padding: 30px 0 30px 0;
+  padding: 3rem 0 3rem 0;
   /* col container */
   /* copyright */
 }
@@ -2490,7 +2482,7 @@ footer .col_container {
 }
 footer .col_container h3, footer .col_container .h3 {
   color: #fff;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -2499,9 +2491,9 @@ footer .col_container .content ul {
 }
 footer .col_container .content ul li {
   list-style: none;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #fff;
-  line-height: 25px;
+  line-height: 2.5rem;
 }
 footer .col_container .content ul li a {
   color: #fff;
@@ -2512,15 +2504,15 @@ footer .col_container .content ul li a:hover {
   text-decoration: underline;
 }
 footer .col_container .content ul a {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #fff;
   font-weight: 500;
 }
 footer .copyright {
   color: #fff;
-  font-size: 12px;
-  border-top: 0.5px solid #fff;
-  padding-top: 3px;
+  font-size: 1.2rem;
+  border-top: 0.05rem solid #fff;
+  padding-top: 0.3rem;
 }
 footer .copyright span a {
   color: #fff;
@@ -2549,8 +2541,8 @@ footer .copyright span a {
   #header {
     position: absolute;
     width: 100%;
-    height: 70px;
-    padding: 15px 15px 10px 15px !important;
+    height: 7rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem !important;
     /* top search */
     /* main menu */
   }
@@ -2569,17 +2561,17 @@ footer .copyright span a {
     /* svg */
   }
   #header .main_menu .main_menu_icon svg {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     color: #fff;
   }
   #header .main_menu ul {
     display: none;
     background-color: #222E3D;
-    padding: 20px 15px 20px 0px;
+    padding: 2rem 1.5rem 2rem 0rem;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 7rem;
     right: 0;
     z-index: 99;
     /* li */
@@ -2589,10 +2581,10 @@ footer .copyright span a {
     width: 100%;
     text-align: right;
     text-transform: uppercase;
-    line-height: 30px;
+    line-height: 3rem;
   }
   #header .main_menu ul .btn_sell_service {
-    margin: 10px 0px !important;
+    margin: 1rem 0rem !important;
   }
 
   /* header */
@@ -2600,6 +2592,8 @@ footer .copyright span a {
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  /* footer */
 }
 /* media small and mobile or medium device*/
 /* 
@@ -2630,24 +2624,24 @@ footer .copyright span a {
     /* services_container */
   }
   #service #services_content .services_container {
-    margin: 10px auto;
-    width: 300px;
-    height: 381px;
+    margin: 1rem auto;
+    width: 30rem;
+    height: 38.1rem;
   }
   #service #services_content .services_container img {
-    height: 190px;
+    height: 19rem;
   }
   #service #services_content .services_container .rating {
-    padding: 15px 7px 5px 7px;
+    padding: 1.5rem 0.7rem 0.5rem 0.7rem;
   }
   #service #services_content .services_container .title {
-    padding-top: 10px;
+    padding-top: 1rem;
   }
   #service #services_content .services_container .title h2, #service #services_content .services_container .title .h2 {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   #service #services_content .services_container .author {
-    padding: 10px 0px;
+    padding: 1rem 0rem;
   }
 
   /* services_content */
@@ -2655,12 +2649,12 @@ footer .copyright span a {
 /* media sm or small - max 575*/
 @keyframes menu_animation_in {
   from {
-    top: -100px;
+    top: -10rem;
     opacity: 0;
   }
   to {
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     width: 100%;
     opacity: 1;
     z-index: 9;
@@ -2668,11 +2662,11 @@ footer .copyright span a {
 }
 @keyframes menu_animation_out {
   from {
-    top: 0px;
+    top: 0rem;
     opacity: 1;
   }
   to {
-    top: -100px;
+    top: -10rem;
     opacity: 0;
   }
 }

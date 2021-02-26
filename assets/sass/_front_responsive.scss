@@ -21,28 +21,28 @@
     #service{
         #services_content{
             .services_container{
-                margin: 10px auto;
-                width: 300px;
-                height: 381px;
+                margin: 1.0rem auto;
+                width: 30.0rem;
+                height: 38.1rem;
 
                 img{
-                    height: 190px;
+                    height: 19.0rem;
                 }
 
                 .rating{
-                    padding: 15px 7px 5px 7px;
+                    padding: 1.5rem .7rem .5rem .7rem;
                 }
 
                 .title{
-                    padding-top: 10px;
+                    padding-top: 1.0rem;
                     
                     h2{
-                        font-size: 18px;
+                        font-size: 1.8rem;
                     }
                 }
 
                 .author{
-                    padding: 10px 0px;
+                    padding: 1.0rem 0rem;
                 }
             }/* services_container */
         }/* services content */
