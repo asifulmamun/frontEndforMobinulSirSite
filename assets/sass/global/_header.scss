@@ -1,0 +1,176 @@
+/* 
+    ----- Header
+*/
+#header{
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.0rem 1.5rem 1.0rem 1.5rem !important;
+    z-index: 9;
+    height: 7rem;
+
+    .logo{
+        float: left;
+        margin-right: 1.5rem !important;
+        padding-top: .4rem !important;
+        
+        span{
+            font-size: $logo_font_size;
+        }/* logo text */
+
+        a{
+            text-decoration: none;
+        }
+    }/* logo */
+
+    .top_search{
+        float: left;
+        width: 40%;
+        box-sizing: border-box;
+        margin-top: .5rem;
+
+        form.top_search_form{
+            box-sizing: border-box;
+
+            input[type=text], button, button:hover{
+                box-sizing: border-box;
+            }
+
+            input[type=text]{
+                float: left;
+                width: 80%;
+                padding: .5rem !important;
+                border: none;
+                border-radius: .5rem 0 0 .5rem;
+                background-color: $body_bg;
+                font-size: $menu_font_size !important;
+            }
+
+            button{
+                float: left;
+                padding: .5rem .7rem !important;
+                border: none;
+                background-color: $primary_color;
+                font-size: 1.3rem !important;
+                cursor: pointer;
+
+                i{
+                    svg{
+                        width: 1.2rem;
+                    }
+                }
+            }
+        }/* form.top_search_form */
+
+        form.top_search_form::after{
+            content: "";
+            clear: both;
+            display: table;
+            box-sizing: border-box;
+        }/* form.top_search_form::after */
+    }/* top search */
+
+    .main_menu{
+        float: right;
+        padding-top: .5rem !important;
+    
+        ul{
+            float: right;
+
+            li{
+                float: left;
+                list-style: none;
+    
+                a{
+                    color: $menu_font_color;
+                    text-decoration: none;
+                    font-size: $menu_font_size;
+                    padding: 1.0rem .5rem 1.0rem 1.5rem !important;
+                    font-weight: 300;
+
+                    i{
+                        svg{
+                            width: 1.4rem;
+                            margin-right: .3rem;
+                        }
+                    }
+                }
+    
+                a:hover{
+                    color: $body_bg_light_deep;
+                    text-decoration: underline;
+                }
+            }/* li */
+    
+            // btn sell service
+            .btn_sell_service{
+                background-color: #00B760;
+                padding: .8rem 1.5rem !important;
+                margin: -.5rem 1.0rem !important;
+                border-radius: .3rem;
+                font-size: $menu_font_size;
+                text-decoration: none;
+                float: right;
+            }/* btn_sell_service */
+            .btn_sell_service:hover{
+                color: $body_bg;
+                text-decoration: underline;
+            }
+        }/* ul */
+    }/* main_menu */
+}/* header */
+
+
+
+#toggle_menu {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+
+    .toggle_item_top {
+        width: 100%;
+        border-top: .4em solid $body_bg;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transition: 0.5s;
+    }
+
+    .toggle_item_middle {
+        width: 100%;
+        border-bottom: .4em solid $body_bg;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+    }
+
+    .toggle_item_bottom {
+        width: 100%;
+        border-bottom: .4em solid $body_bg;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transition: 0.5s;
+    }
+
+    .toggle_item_top_hover {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+    
+    .toggle_item_middle_hover {
+        opacity: 0;
+    }
+    
+    .toggle_item_bottom_hover {
+        bottom: 50% !important;
+        right: 50% !important;
+        transform: translate(50%, 50%) rotateZ(45deg);
+    }
+
+}/* toggle */

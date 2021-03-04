@@ -1,0 +1,200 @@
+/*
+    ------ catergory
+*/
+// category container
+.cat_container{
+    border: .1rem solid #ccc;
+    height: 25.0rem;
+    padding: .5rem .5rem;
+    overflow: hidden;
+    background-color: $body_bg_container;
+    display: inline-block;
+    box-shadow: 0 .3rem .7rem #e0e0e0;
+
+    h2{
+        font-size: 1.8rem;
+        text-align: center;
+        padding-top: 1.3rem;
+
+        a{
+            font-weight: 300;
+            color: $font_color;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $body_bg_light_deep_font_color;
+            text-decoration: underline !important;
+        }
+    }/* h2 */
+}/* category container */
+
+// category image
+.cat_img{
+    text-align: center;
+
+    img{
+        width: 95%;
+        height: auto;
+    }
+}/* category image */
+
+// category see more button or link
+.cat_see_more{
+    border-bottom: .1rem solid #ddd;
+    padding: {
+        bottom: .3rem;
+    }
+
+    a{
+        font-size: 1.2rem;
+        color: $font_color;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+}/* cat see more btton or link */
+
+/* 
+    -------- Service Section
+*/
+
+#service{
+
+    // main heading
+    .heading{
+        h2{
+            font-size: 2.2rem;
+            color: $font_color;
+            text-transform: uppercase;
+        }
+    }/* main heading */
+
+    #shortBy{
+        width: 3.0rem;
+        height: 3.0rem;
+        overflow: hidden;
+        float: right;
+        cursor: pointer;
+    
+        svg{
+            width: 100%;
+            height: 70%;
+        }
+    }/* short by */
+
+    // services content
+    #services_content{
+
+        // container
+        .services_container{
+            width: 22.0rem;
+            height: 28.0rem;
+            border: .1rem solid #ccc;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 .3rem .7rem #e0e0e0;
+
+            // thumbnail image
+            .services_thumb{
+                padding: .3rem;
+                img{
+                    width: 100%;
+                    height: 15.0rem;
+                }
+            }
+        
+            // rating
+            .rating{
+                padding: .3rem .7rem;
+
+                .rating_icon{
+                    svg{
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        cursor: pointer;
+                    }
+                }
+            }/* rating */
+            
+            // title
+            .title{
+                padding: 0rem .7rem;
+                h2{
+                    font-size: 1.5rem;
+
+                    a{
+                        color: $font_color;
+                        font-weight: 300;
+                        text-decoration: none;
+                    }
+                }
+            }/* title */
+
+            // authore
+            .author{
+                h4{
+                    font-size: 1.3rem;
+                    color: $font_color;
+                    padding: 0 .5rem;
+                    font-weight: 300;
+
+                    a{
+                        color: #555;
+                        text-decoration: none;
+                    }
+                }
+            }/* authore */
+
+            // price
+            span.price{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 2.0rem;
+                font-weight: 300;
+                color: $primary_color;
+                padding: 0 .5rem .5rem 0;
+            }/* price */
+
+            // featured
+            div.featured{
+                position: absolute;
+                top: .8rem;
+                left: .1rem;
+                width: 7.0rem;
+                height: 2.0rem;
+                background-image: url(../img/featured_icon.png);
+                z-index: 2;
+            }/* featured */
+
+        }/* container */
+    }/* services content */
+
+
+}/* service section */
+
+
+/* 
+    ----- When services sectino HORIZONTAL
+*/
+.services_content_horizontal{
+    .services_container{
+        width: 95% !important;
+        height: auto !important;
+        overflow-x: hidden !important;
+
+        .title{
+            padding: .5rem .7rem !important;
+        }
+
+        .services_thumb{
+            width: 40%;
+            height: auto;
+            float: left;
+            margin-right: 1.5%;
+        }/* services_thumb */
+    }/* services_container */
+}/* services_content_horizontal */

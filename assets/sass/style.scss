@@ -1,18 +1,15 @@
 /*
     ---- Bootstap
 */
-// // Custom.scss
-// // Option A: Include all of Bootstrap
+// --   If required - Option A: Include all of Bootstrap
 // @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Custom.scss
-// Option B: Include parts of Bootstrap
-// Required
+// --   Required - Option B: Include parts of Bootstrap
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-// Optional
+// --   Optional - Option B: Include parts of Bootstrap
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
@@ -21,29 +18,34 @@
 @import "../node_modules/bootstrap/scss/grid";
 
 
-/* 
-    ----- Template Css - Global
-*/
-@import "./_reset.scss";
-@import "./_variable.scss";
-@import "./_google_fonts.scss";
-@import "./_global.scss";
-@import "./_header.scss";
 
-/* 
-    ----- Template Css- Content
-*/
-@import "./_front_content.scss";
-@import "./_footer.scss";
 
 
 /* 
-    ------ Mobile responsive media query
+    --- Global
 */
+@import "./global/reset";
+@import "./global/variable";
+@import "./global/fonts";
+@import "./global/global";
+@import "./global/header";
+@import "./global/footer";
 
 // responsive
-@import "./_global_responsive.scss";
-@import "./_front_responsive.scss";
+@import "./global/responsive";
 
 // animatoin
-@import "./_scss_part/_animation.scss";
+@import "./global/animation";
+
+
+
+
+
+/* 
+    --- Template Css- Content
+*/
+@import "./front/banner";
+@import "./front/content";
+
+// responsive
+@import "./front/responsive";
