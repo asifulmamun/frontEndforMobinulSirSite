@@ -2500,12 +2500,13 @@ footer .copyright span a {
   box-sizing: border-box;
   margin: 2rem 5%;
   background: #fff;
-  /* content_wrap */
+  /* wrap_content */
 }
 .common_content .wrap_content {
   border: 0.1rem solid #ccc;
   /* content_head */
   /* comments */
+  /* related content */
 }
 .common_content .wrap_content .content_head {
   /* content_head_top */
@@ -2556,11 +2557,57 @@ footer .copyright span a {
 .common_content .wrap_content .comments .rating .rating_star svg {
   width: 2rem;
 }
-.common_content .wrap_content .comments .rating .remove_rating {
-  color: #da2c2c;
+.common_content .wrap_content .comments .rating .rating_star svg:hover {
+  color: #f7ab55;
 }
-.common_content .wrap_content .comments .rating .remove_rating svg {
-  width: 1.5rem;
+.common_content .wrap_content .comments form textarea {
+  padding: 1rem 1rem;
+  border: 1px solid #ccc;
+  color: #383a3c;
+  margin: 2rem 0 0 0;
+  box-shadow: 0.5rem 0.5rem 1rem -0.2rem #ccc;
+}
+.common_content .wrap_content .comments form textarea:focus {
+  border-color: #00B760;
+}
+.common_content .wrap_content .comments form input[type=submit] {
+  padding: 0.3rem 1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  background-color: #00B760;
+  border: none;
+  border-radius: 0.3rem;
+  color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem -0.2rem #ccc;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.common_content .wrap_content .comments form input[type=submit]:hover {
+  background-color: #B70057;
+}
+.common_content .wrap_content .rltd_cntn .wrap_rltd {
+  column-count: 2;
+  column-fill: auto;
+  padding-bottom: 2rem;
+}
+.common_content .wrap_content .rltd_cntn .wrap_rltd ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.common_content .wrap_content .rltd_cntn .wrap_rltd ul li {
+  list-style: none;
+}
+.common_content .wrap_content .rltd_cntn .wrap_rltd ul li div > img {
+  width: 40px;
+  float: left;
+  margin-right: 1.4rem;
+}
+.common_content .wrap_content .rltd_cntn .wrap_rltd ul li div > h3, .common_content .wrap_content .rltd_cntn .wrap_rltd ul li div > .h3 {
+  font-size: 1.4rem;
 }
 
 /* service_content */

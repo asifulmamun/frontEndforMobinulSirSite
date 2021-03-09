@@ -23,6 +23,9 @@ function all_rating_remove() {
 
     rating_value = 0;
     console.log('Rated', rating_value);
+
+    // hidden value to feedback form
+    document.feedback.rating.value = rating_value;
 }
 
 // rated-1
@@ -32,6 +35,9 @@ function rated_1() {
 
         rating_value = 1;
         console.log('Rated', rating_value);
+
+        // hidden value to feedback form
+        document.feedback.rating.value = rating_value;
 
         // add
         document.getElementById('rate_1').innerHTML = rating_star_filled;
@@ -57,6 +63,9 @@ function rated_2() {
         rating_value = 2;
         console.log('Rated', rating_value);
 
+        // hidden value to feedback form
+        document.feedback.rating.value = rating_value;
+
         // add
         document.getElementById('rate_1').innerHTML = rating_star_filled;
         document.getElementById('rate_2').innerHTML = rating_star_filled;
@@ -80,6 +89,9 @@ function rated_3() {
 
         rating_value = 3;
         console.log('Rated', rating_value);
+
+        // hidden value to feedback form
+        document.feedback.rating.value = rating_value;
 
         // add
         document.getElementById('rate_1').innerHTML = rating_star_filled;
@@ -105,6 +117,9 @@ function rated_4() {
         rating_value = 4;
         console.log('Rated', rating_value);
 
+        // hidden value to feedback form
+        document.feedback.rating.value = rating_value;
+
         // add
         document.getElementById('rate_1').innerHTML = rating_star_filled;
         document.getElementById('rate_2').innerHTML = rating_star_filled;
@@ -128,6 +143,9 @@ function rated_5() {
 
         rating_value = 5;
         console.log('Rated', rating_value);
+
+        // hidden value to feedback form
+        document.feedback.rating.value = rating_value;
 
         // add
         document.getElementById('rate_1').innerHTML = rating_star_filled;
