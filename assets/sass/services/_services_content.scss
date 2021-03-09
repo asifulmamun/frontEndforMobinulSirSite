@@ -226,7 +226,26 @@
                 padding: .5rem 0 0 1.5rem;
                 font-size: 1.2rem;
             }
-        }
+
+            .rating{
+                cursor: pointer;
+                .rating_star{
+                    .filled{
+                        color: rgb(247, 132, 1);
+                    }
+                    svg{
+                        width: 2rem;
+                    }
+                }
+                .remove_rating{
+                    color: rgb(218, 44, 44);
+                    svg{
+                        width: 1.5rem;
+                    }
+                }
+            }
+
+        }/* comments */
 
     }/* content_wrap */
 

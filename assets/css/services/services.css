@@ -2505,6 +2505,7 @@ footer .copyright span a {
 .common_content .wrap_content {
   border: 0.1rem solid #ccc;
   /* content_head */
+  /* comments */
 }
 .common_content .wrap_content .content_head {
   /* content_head_top */
@@ -2545,6 +2546,21 @@ footer .copyright span a {
 .common_content .wrap_content .comments .comments_content {
   padding: 0.5rem 0 0 1.5rem;
   font-size: 1.2rem;
+}
+.common_content .wrap_content .comments .rating {
+  cursor: pointer;
+}
+.common_content .wrap_content .comments .rating .rating_star .filled {
+  color: #f78401;
+}
+.common_content .wrap_content .comments .rating .rating_star svg {
+  width: 2rem;
+}
+.common_content .wrap_content .comments .rating .remove_rating {
+  color: #da2c2c;
+}
+.common_content .wrap_content .comments .rating .remove_rating svg {
+  width: 1.5rem;
 }
 
 /* service_content */
