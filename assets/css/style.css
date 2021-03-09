@@ -2250,7 +2250,7 @@ footer .copyright span a {
 */
 /* media md 576-767 */
 /* 
-    ------ Only Small Phone - Medium and Small
+    ----- Medium and Small
 */
 @media only screen and (max-width: 767px) {
   #header {
@@ -2428,7 +2428,7 @@ footer .copyright span a {
 }
 
 /* 
-    ------ Only Small Phone - Medium and Samll
+    ------ Medium and Samll
 */
 @media only screen and (max-width: 767px) {
   #banner_section {

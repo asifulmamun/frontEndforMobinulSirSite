@@ -1,0 +1,72 @@
+/* 
+    ----- Medium and Small
+*/
+@media only screen and (max-width:767px){
+
+
+// Top Bar
+#top_bar{
+
+    ul{        
+        li{
+            a{
+                padding: .5rem .5rem;
+            }
+        }
+    }
+}/* top bar */
+
+// content_service
+.common_content{
+
+    .wrap_content{
+
+        .comments{
+            padding: .7rem;
+
+            .thumbnail{
+                float: none;
+                margin: 0 auto 1rem auto;
+            }/* thumbnail */
+
+            .comment_dtls{
+                padding-bottom: 1.5rem;
+
+                span{
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .comment_box{
+            border: .05rem dashed $border_color;
+            margin: .5rem;
+        }
+
+        // related content
+        .rltd_cntn{
+            .wrap_rltd{
+                column-count: unset;
+                column-fill: unset;
+                padding-bottom: 2rem;
+
+                ul{
+                    border: .05rem dashed $border_color;
+                    margin: .5rem;
+                    
+                    li{
+                        div>h3{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }/* related content */
+
+    }/* wrap_content */
+
+}
+
+}

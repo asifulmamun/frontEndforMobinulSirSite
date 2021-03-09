@@ -2243,7 +2243,7 @@ footer .copyright span a {
 */
 /* media md 576-767 */
 /* 
-    ------ Only Small Phone - Medium and Small
+    ----- Medium and Small
 */
 @media only screen and (max-width: 767px) {
   #header {
@@ -2611,5 +2611,52 @@ footer .copyright span a {
 }
 
 /* service_content */
+/* 
+    ----- Medium and Small
+*/
+@media only screen and (max-width: 767px) {
+  #top_bar ul li a {
+    padding: 0.5rem 0.5rem;
+  }
+
+  /* top bar */
+  .common_content {
+    /* wrap_content */
+  }
+  .common_content .wrap_content {
+    /* related content */
+  }
+  .common_content .wrap_content .comments {
+    padding: 0.7rem;
+    /* thumbnail */
+  }
+  .common_content .wrap_content .comments .thumbnail {
+    float: none;
+    margin: 0 auto 1rem auto;
+  }
+  .common_content .wrap_content .comments .comment_dtls {
+    padding-bottom: 1.5rem;
+  }
+  .common_content .wrap_content .comments .comment_dtls span {
+    display: block;
+    text-align: center;
+  }
+  .common_content .wrap_content .comment_box {
+    border: 0.05rem dashed #ccc;
+    margin: 0.5rem;
+  }
+  .common_content .wrap_content .rltd_cntn .wrap_rltd {
+    column-count: unset;
+    column-fill: unset;
+    padding-bottom: 2rem;
+  }
+  .common_content .wrap_content .rltd_cntn .wrap_rltd ul {
+    border: 0.05rem dashed #ccc;
+    margin: 0.5rem;
+  }
+  .common_content .wrap_content .rltd_cntn .wrap_rltd ul li div > h3, .common_content .wrap_content .rltd_cntn .wrap_rltd ul li div > .h3 {
+    font-size: 1.2rem;
+  }
+}
 
 /*# sourceMappingURL=services.css.map */
