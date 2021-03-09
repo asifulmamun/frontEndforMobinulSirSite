@@ -1,32 +1,5 @@
 /* 
     --- Rating System
-    <div class="rating">
-        <span class="rating_star" id="rate_1"></span>
-        <span class="rating_star" id="rate_2"></span>
-        <span class="rating_star" id="rate_3"></span>
-        <span class="rating_star" id="rate_4"></span>
-        <span class="rating_star" id="rate_5"></span>
-    </div>
-
-    sass:
-    ------
-    .rating{
-        cursor: pointer;
-        .rating_star{
-            .filled{
-                color: rgb(247, 132, 1);
-            }
-            svg{
-                width: 2rem;
-            }
-        }
-        .remove_rating{
-            color: rgb(218, 44, 44);
-            svg{
-                width: 1.5rem;
-            }
-        }
-    }
 */
 
 // rating empty
@@ -47,6 +20,9 @@ function all_rating_remove() {
     document.getElementById('rate_3').innerHTML = rating_star_empty;
     document.getElementById('rate_4').innerHTML = rating_star_empty;
     document.getElementById('rate_5').innerHTML = rating_star_empty;
+
+    rating_value = 0;
+    console.log('Rated', rating_value);
 }
 
 // rated-1
@@ -70,8 +46,6 @@ function rated_1() {
 
         all_rating_remove();
 
-        rating_value = 0;
-        console.log('Rated', rating_value);
     }
 };
 
@@ -96,8 +70,6 @@ function rated_2() {
 
         all_rating_remove();
 
-        rating_value = 0;
-        console.log('Rated', rating_value);
     }
 };
 
@@ -122,8 +94,6 @@ function rated_3() {
 
         all_rating_remove();
 
-        rating_value = 0;
-        console.log('Rated', rating_value);
     }
 };
 
@@ -148,8 +118,6 @@ function rated_4() {
 
         all_rating_remove();
 
-        rating_value = 0;
-        console.log('Rated', rating_value);
     }
 };
 
@@ -172,8 +140,6 @@ function rated_5() {
 
         all_rating_remove();
 
-        rating_value = 0;
-        console.log('Rated', rating_value);
     }
 };
 
@@ -183,18 +149,3 @@ document.getElementById('rate_2').addEventListener('click', rated_2);
 document.getElementById('rate_3').addEventListener('click', rated_3);
 document.getElementById('rate_4').addEventListener('click', rated_4);
 document.getElementById('rate_5').addEventListener('click', rated_5);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
