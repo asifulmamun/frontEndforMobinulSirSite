@@ -1,0 +1,72 @@
+body{
+    box-sizing: border-box;
+    overflow: hidden;
+
+    #login_form{
+        width: 40rem;
+        min-height: 70vh;
+        @extend %center_absolute;
+        @include box_shadow(.3rem, .8rem, 1.2rem, .4rem, #ccc);
+        padding: 6rem 2rem;
+        box-sizing: border-box;
+
+        .logo{
+            text-align: center;
+            padding: 0 0 2.5rem 0;
+
+            img{
+                border: .1rem solid $primary_color;
+                border-radius: 50%;
+                @include box_shadow(-.5rem, .8rem, 1.2rem, .4rem, #ccc);
+                @include transition(3s, ease);
+
+                &:hover{
+                    @include transform_scale(1.1);
+                }
+
+            }
+        }
+
+        form{
+
+            input{
+                display: block;
+                margin: 1rem auto;
+            }
+
+            input[type=text],input[type=password]{
+                border: .1rem solid #ccc;
+                padding: .3rem .5rem;
+                background: transparent;
+                @include box_shadow (.5rem, .5rem, 1rem, -.2rem, $border_color);
+                @include transition(3s, ease);
+
+                &:hover,&:focus,&:active,&:visited{
+                    border-color: $primary_color;
+                }
+            }
+
+            input[type=submit]{
+                padding: .3rem 1rem;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                margin-top: 1.5rem;
+                background-color: $primary_color;
+                border: none;
+                border-radius: .3rem;
+                color: $menu_font_color;
+                @include box_shadow (.5rem, .5rem, 1rem, -.2rem, $border_color);
+                @include transition(3s, ease);
+
+                &:hover{
+                    background-color: $secodary_color;
+                    @include transition(.3s, ease);
+                }
+            }
+        }
+    }
+
+}
+
+// responsive
+@import "./_responsive";

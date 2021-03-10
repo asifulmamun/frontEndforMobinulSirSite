@@ -1946,6 +1946,20 @@ footer .col_container .content ul a:hover {
   text-decoration: underline;
 }
 
+/* 
+    ------ Center Absolute under relative
+*/
+.banner .banner_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
 .simple_space_top {
   margin-top: 3rem !important;
 }
@@ -2013,20 +2027,6 @@ footer .col_container .content ul a:hover {
 
 .bg_deep {
   background-color: #222E3D;
-}
-
-/* 
-    ------ Center Absolute under relative
-*/
-.banner .banner_content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
 }
 
 /* 
@@ -2424,7 +2424,11 @@ footer .copyright span a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(161deg, #00000052, #00000091);
+  background-image: linear-gradient(161deg, #000, #00000052, #00000091, #00000091);
+  background-image: -webkit-linear-gradient(161deg, #000, #00000052, #00000091, #00000091);
+  background-image: -moz-linear-gradient(161deg, #000, #00000052, #00000091, #00000091);
+  background-image: -ms-linear-gradient(161deg, #000, #00000052, #00000091, #00000091);
+  background-image: -o-linear-gradient(161deg, #000, #00000052, #00000091, #00000091);
 }
 
 /* 

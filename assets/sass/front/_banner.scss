@@ -73,7 +73,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    @include bg_color(161deg, #000000bd, #00000052, #00000091);
+    @include bg_linear_gradient(161deg, #000, #00000052, #00000091, #00000091);
 }
 
 // Banner Responsive

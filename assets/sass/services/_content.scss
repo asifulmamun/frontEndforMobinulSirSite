@@ -249,7 +249,7 @@
                     border: 1px solid $border_color;
                     color: $font_color;
                     margin: 2rem 0 0 0;
-                    box-shadow: .5rem .5rem 1rem -.2rem $border_color;
+                    @include box_shadow (.5rem, .5rem, 1rem, -.2rem, $border_color);
 
                     &:focus{
                         border-color: $primary_color ;
@@ -265,7 +265,7 @@
                     border: none;
                     border-radius: .3rem;
                     color: $menu_font_color;
-                    box-shadow: .5rem .5rem 1rem -.2rem $border_color;
+                    @include box_shadow (.5rem, .5rem, 1rem, -.2rem, $border_color);
                     @include transition(.3s, ease);
 
                     &:hover{
