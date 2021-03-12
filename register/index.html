@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/register/register.css">
+
+    <link rel="shortcut icon" href="#">
+    <title>Register</title>
+</head>
+
+<body>
+    
+    <!-- notice -->
+    <div id="reg_from_notice"></div>
+    
+    <section id="login_form">
+        <div class="logo">
+            <img src="https://secure.gravatar.com/avatar/956c43e2b4cdd82d775917bfa1b54e86?s=100" alt=""><br>
+            <span>AMARSHEBA</span>
+        </div>
+        <form name="register" action="./">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input class="form_input" type="text" name="username" placeholder="Username">
+                    <input class="form_input" type="password" name="password" placeholder="Passowrd">
+                    <input class="form_input" type="password" name="password_2" placeholder="Re-type Passowrd">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <input class="form_input" type="email" name="email" placeholder="E-mail">
+                    <input class="form_input" type="text" name="phone" placeholder="Phone">
+                    <input class="form_input" type="text" name="address" placeholder="Address">
+                </div>
+            </div>
+            <input id="submit" type="submit" value="Register">
+        </form>
+        <br>
+        <span><a class="primary_color" href="../login/">Login</a> | <a class="primary_color" href="../">Back to Home</a></span>
+    </section>
+
+    <!-- js -->
+    <script src="../assets/js/register/app.js"></script>
+</body>
+</html>

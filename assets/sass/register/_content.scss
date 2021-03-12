@@ -1,10 +1,8 @@
 body{
     box-sizing: border-box;
-    overflow: hidden;
-
+    
     #login_form{
-        width: 40rem;
-        min-height: 80vh;
+        min-width: 70%;
         @extend %center_absolute;
         @include box_shadow(.3rem, .8rem, 1.2rem, .4rem, #ccc);
         padding: 6rem 2rem;
@@ -32,17 +30,20 @@ body{
                 padding-top: 1rem;
                 color: $secodary_color;
                 font-size: 2rem;
+                
             }
         }
 
         form{
 
+
             input{
                 display: block;
-                margin: 1rem auto;
+                margin: 2rem auto;
+                width: 80%;
             }
 
-            input[type=text],input[type=password]{
+            input[type=text],input[type=password],input[type=email]{
                 border: .1rem solid #ccc;
                 padding: .7rem 1rem;
                 background: transparent;
@@ -53,8 +54,9 @@ body{
                     border-color: $primary_color;
                 }
             }
-
+           
             input[type=submit]{
+                width: inherit;
                 padding: 1rem 1.8rem 1rem 1.8rem;
                 font-size: 1.6rem;
                 text-transform: uppercase;
@@ -77,5 +79,50 @@ body{
 
 }
 
+// form validation
+#reg_from_notice{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 999;
+
+    ul{
+
+        li{
+            list-style: none;
+            color: white;
+            padding: .5rem 1rem;
+            background: $secodary_color;
+            font-weight: 500;
+
+            span{
+
+               svg{
+                    width: 1rem;
+                    cursor: pointer;
+                } 
+            }
+            
+        }
+    }
+}
+
+.primary_border_color{
+    border-color: $primary_color;
+}
+
+.secondary_border_color{
+    border-color: $secodary_color;
+}
+
+
+
+
+
 // responsive
-@import "./_responsive";
+@import "./_responive";
